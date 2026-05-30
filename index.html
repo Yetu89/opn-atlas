@@ -6,6 +6,7 @@
 <title>OPNAtlas</title>
 
 <style>
+
 html{
 scroll-behavior:smooth;
 }
@@ -39,7 +40,6 @@ color:#2dd4bf;
 color:white;
 text-decoration:none;
 margin-left:20px;
-transition:0.3s;
 }
 
 .nav-links a:hover{
@@ -53,8 +53,8 @@ padding:100px 20px;
 
 .hero h1{
 font-size:4rem;
-margin-bottom:20px;
 color:#2dd4bf;
+margin-bottom:20px;
 }
 
 .hero p{
@@ -86,16 +86,21 @@ background:#1e293b;
 padding:30px;
 margin-bottom:25px;
 border-radius:16px;
-transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-3px);
+.card a{
+color:#38bdf8;
+text-decoration:none;
 }
 
-.card h2{
-margin-top:0;
-color:white;
+.card a:hover{
+text-decoration:underline;
+}
+
+hr{
+border:none;
+border-top:1px solid rgba(255,255,255,0.1);
+margin:20px 0;
 }
 
 footer{
@@ -103,13 +108,22 @@ text-align:center;
 padding:50px 20px;
 color:#94a3b8;
 }
+
+footer a{
+color:#38bdf8;
+text-decoration:none;
+}
+
 </style>
 
 </head>
 <body>
 
 <nav class="navbar">
-<div class="logo">OPNAtlas</div>
+
+<div class="logo">
+OPNAtlas
+</div>
 
 <div class="nav-links">
 <a href="#home">Home</a>
@@ -117,6 +131,7 @@ color:#94a3b8;
 <a href="#projects">Projects</a>
 <a href="#roadmap">Roadmap</a>
 </div>
+
 </nav>
 
 <section class="hero" id="home">
@@ -124,11 +139,12 @@ color:#94a3b8;
 <h1>OPNAtlas</h1>
 
 <p>
-Discover builders, projects, repositories, and ecosystem resources across OPN Chain.
+Discover builders, projects, repositories,
+and ecosystem resources across OPN Chain.
 </p>
 
-<a href="#ecosystem" class="btn">
-Explore OPN Ecosystem
+<a href="#projects" class="btn">
+Explore Projects
 </a>
 
 </section>
@@ -136,68 +152,102 @@ Explore OPN Ecosystem
 <section class="section">
 
 <div class="card" id="ecosystem">
+
 <h2>Ecosystem Resources</h2>
+
 <p>
-Access documentation, explorers, faucets, repositories, and community tools across OPN Chain.
+<a href="https://testnet.iopn.tech" target="_blank">
+🔗 OPN Explorer
+</a>
 </p>
+
+<p>
+<a href="https://discord.gg/iopn" target="_blank">
+💬 OPN Discord
+</a>
+</p>
+
+<p>
+<a href="https://github.com/Yetu89/opn-atlas" target="_blank">
+📂 GitHub Repository
+</a>
+</p>
+
 </div>
 
 <div class="card" id="projects">
+
 <h2>Featured Projects</h2>
+
 <p>
-Explore community-driven applications, DeFi platforms, developer tools, and ecosystem initiatives.
+<a href="https://unie-three.vercel.app" target="_blank">
+<b>UNIE</b>
+</a><br>
+Community-driven token on OPN Chain.
 </p>
+
+<hr>
+
+<p>
+<a href="https://opn-quest-5v8o.vercel.app" target="_blank">
+<b>OPNQuest</b>
+</a><br>
+Community onboarding and quest platform.
+</p>
+
+<hr>
+
+<p>
+<b>Future Projects</b><br>
+More ecosystem projects coming soon.
+</p>
+
 </div>
 
 <div class="card">
+
 <h2>Community Builders</h2>
+
 <p>
-Discover active developers, contributors, creators, and ecosystem supporters building on OPN Chain.
+Discover active developers, contributors,
+creators, and ecosystem supporters building on OPN Chain.
 </p>
+
 </div>
 
 <div class="card">
-<h2>Project Discovery</h2>
-<p>
-Browse innovative projects and learn what is currently being built across the OPN ecosystem.
-</p>
-</div>
 
-<div class="card">
 <h2>Builder Directory</h2>
-<p>
-A growing list of builders, teams, and contributors participating in the OPN ecosystem.
-</p>
-</div>
 
-<div class="card">
-<h2>Ecosystem Statistics</h2>
 <p>
-Future dashboard tracking projects, builders, repositories, and community growth across OPN Chain.
+A growing list of builders, teams,
+and contributors participating in the OPN ecosystem.
 </p>
+
 </div>
 
 <div class="card" id="roadmap">
+
 <h2>Roadmap</h2>
 
 <p>
-<strong>Phase 1 - Directory Launch</strong><br>
-Launch OPNAtlas landing page and builder directory.
+<strong>Phase 1</strong><br>
+Launch Builder Directory
 </p>
 
 <p>
-<strong>Phase 2 - Ecosystem Listings</strong><br>
-Add projects, tools, and resource discovery.
+<strong>Phase 2</strong><br>
+Expand Ecosystem Listings
 </p>
 
 <p>
-<strong>Phase 3 - Community Contributions</strong><br>
-Allow community members to submit and update listings.
+<strong>Phase 3</strong><br>
+Community Contributions
 </p>
 
 <p>
-<strong>Phase 4 - Analytics Dashboard</strong><br>
-Track ecosystem growth and highlight active builders.
+<strong>Phase 4</strong><br>
+Analytics & Insights
 </p>
 
 </div>
@@ -205,8 +255,21 @@ Track ecosystem growth and highlight active builders.
 </section>
 
 <footer>
-<p>OPNAtlas © 2026</p>
-<p>Discovering builders and projects across OPN Chain.</p>
+
+<p>
+OPNAtlas © 2026
+</p>
+
+<p>
+Discovering builders and projects across OPN Chain.
+</p>
+
+<p>
+<a href="https://github.com/Yetu89/opn-atlas" target="_blank">
+GitHub Repository
+</a>
+</p>
+
 </footer>
 
 </body>
