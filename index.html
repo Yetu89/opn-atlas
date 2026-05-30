@@ -150,6 +150,30 @@ color:#38bdf8;
 text-decoration:none;
 }
 
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#0f172a;
+padding:25px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+border-color:#2dd4bf;
+}
+
+.project-card h3{
+color:#2dd4bf;
+margin-bottom:10px;
+}
+
 </style>
 </head>
 <body>
@@ -242,31 +266,37 @@ GitHub Repository
 
 <h2>Featured Projects</h2>
 
+<div class="project-grid">
+
+<div class="project-card">
+<h3>UNIE</h3>
+
 <p>
-<a href="https://unie-three.vercel.app" target="_blank">
-<strong>UNIE</strong>
-</a><br>
 Community-driven token built on OPN Chain.
 </p>
 
-<hr>
-
-<p>
-<a href="https://opn-quest-5v8o.vercel.app" target="_blank">
-<strong>OPNQuest</strong>
-</a><br>
-Community onboarding and quest platform.
-</p>
-
-<hr>
-
-<p>
-<strong>Future Projects</strong><br>
-More ecosystem tools and initiatives coming soon.
-</p>
+<a href="https://unie-three.vercel.app" target="_blank">
+Visit Project →
+</a>
 
 </div>
 
+<div class="project-card">
+<h3>OPNQuest</h3>
+
+<p>
+Community onboarding and quest platform.
+</p>
+
+<a href="https://opn-quest-5v8o.vercel.app" target="_blank">
+Visit Project →
+</a>
+
+</div>
+
+</div>
+
+</div>
 <div class="card">
 
 <h2>Latest Ecosystem Activity</h2>
